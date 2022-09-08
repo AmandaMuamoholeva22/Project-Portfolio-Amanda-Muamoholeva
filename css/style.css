@@ -1,0 +1,100 @@
+/*
+Colors used:
+base primary color(black): #161515;
+secondary color (blue): #0D08F3;
+Tertiary color (light blue): #4BFDF2;
+Text color (light pink): #FACBCD;
+Text color (white): #F5F5F5;
+*/
+
+body {
+  background-color: #161515;
+  font-family: 'Comfortaa'. sans-serif;
+  font-size: 16px
+  font-weight: 300;
+  line-height: 1.6;
+  color: #FACBCD;
+}
+
+h1,h2,h3,h4 {
+  line-height: 1.4
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+font-size: 1.35em;
+font-weight: 400;
+}
+
+p {
+  font-family: 'Comfortaa';
+  font-size: 16px
+  line-height: 1.6
+  font-weight: 300;
+  font-color:#F5F5F5
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ff7f50;
+}
+
+a:hover, focus {
+  color: #cc6540;
+  text-decoration: underline;
+}
+
+a:active { /
+  color: #994c30;
+}
+
+}
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FACBCD;
+  color: #1E1E1E;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #1E1E1E;
+  transition: 0.2s opacity;
+}
+
+.button.contact:hoover {
+  background-color: transparent;
+  color: #FACBCD;
+  text-transform: uppercase;
+  border: 2px solid #FACBCD;
+}
+
+.button.contact:hover {
+  background-color: #FACBCD;
+  color: #ffffff;
+}
