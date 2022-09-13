@@ -7,14 +7,17 @@ Text color (light pink): #FACBCD;
 Text color (white): #F5F5F5;
 */
 
-body {
+*body {
   background-color: #161515;
-  font-family: 'Comfortaa'. sans-serif;
+  font-family: 'Comfortaa'. Comfortaa;
   font-size: 16px
   font-weight: 300;
   line-height: 1.6;
   color: #FACBCD;
 }
+
+ selector {
+  margin: 0 auto;
 
 h1,h2,h3,h4 {
   line-height: 1.4
@@ -52,6 +55,18 @@ img {
   width: 100%;
 }
 
+/* Layout styling */
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+
+}
+
+#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
 a {
   color: #ff7f50;
   text-decoration: none;
@@ -67,7 +82,7 @@ a:hover, focus {
 }
 
 a:active { /
-  color: #994c30;
+  color: #ffffff;
 }
 
 }
