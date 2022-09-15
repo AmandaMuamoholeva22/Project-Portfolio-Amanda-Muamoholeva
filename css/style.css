@@ -1,3 +1,6 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
 /*
 Colors used:
 base primary color(black): #161515;
@@ -7,22 +10,23 @@ Text color (light pink): #FACBCD;
 Text color (white): #F5F5F5;
 */
 
-*body {
+body {
   background-color: #161515;
-  font-family: 'Comfortaa'. Comfortaa;
-  font-size: 16px
+  font-family: 'Comfortaa', cursive;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #FACBCD;
 }
 
 header {
-box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
+  box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   background-color: #FACBCD;
   text-align: center;
   padding: 10px 0;
   position: relative;
 }
+
 #header h1 {
   margin: 0;
   padding: 0.67em 0;
@@ -32,33 +36,54 @@ box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   background-color: #FACBCD;
   padding: 20px 0;
   display: inline-block;
- width: 100%;
+  width: 100%;
 }
 
-nav > ul > li {
+div.content {
+  padding: 50px;
+}
+
+div nav>ul>li {
   display: inline-block;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   list-style-type: none;
   padding: 0 15px;
- text-transform: uppercase;
- font-weight: 700;
- color: #4a4a4a;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
   display: inline-block;
   width: 100%
 }
 
-nav > ul > li> a:visited {
+div#work div.work-section {
+  background-color: rgb(66, 66, 66);
+  height: 250px;
+  margin: 30px;
+  padding: 30px;
+}
+
+div#work div.work-section picture {
+  float: left;
+  margin: 0 20px;
+}
+
+div#work div.work-section img {
+  width: 300px;
+}
+
+nav>ul>li>a:visited {
   color: #F5F5F5;
 }
 
-nav > ul > li> a:hover, focus {
+nav>ul>li>a:hover,
+focus {
   color: #cc6540;
   text-decoration: underline;
 }
 
-nav > ul > li> a:active {
+nav>ul>li>a:active {
   color: #ffffff;
 }
 
@@ -66,11 +91,15 @@ nav > ul > li> a:active {
   text-align: center;
 }
 
- selector {
+selector {
   margin: 0 auto;
+}
 
-h1,h2,h3,h4 {
-  line-height: 1.4
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
 }
 
 h1 {
@@ -89,21 +118,20 @@ h3 {
 }
 
 h4 {
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 p {
-  font-family: 'Comfortaa';
-  font-size: 16px
-  line-height: 1.6
+  font-size: 16px;
+  line-height: 1.6;
   font-weight: 300;
-  font-color:#F5F5F5
+  color: #F5F5F5
 }
 
-img {
+/* img {
   width: 100%;
-}
+} */
 
 .logo {
   max-width: 250px;
@@ -119,7 +147,10 @@ img {
 
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 a {
   color: #ff7f50;
@@ -130,7 +161,8 @@ a:visited {
   color: #ff7f50;
 }
 
-a:hover, focus {
+a:hover,
+focus {
   color: #cc6540;
   text-decoration: underline;
 }
@@ -139,7 +171,6 @@ a:active {
   color: #ffffff;
 }
 
-}
 .button:hover {
   opacity: 0.8;
   text-decoration: none;
