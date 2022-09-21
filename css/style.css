@@ -57,6 +57,40 @@ nav>ul>li>a {
   width: 100%
 }
 
+nav>ul>li> {
+  list-style-type: none;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #4a4a4a;
+  display: inline-block;
+  width: 100%
+}
+div.user-personas img {
+  width: 20px
+  text-align: center;
+
+}
+
+div.user-personas {
+  text-align: center;
+  margin: 10px;
+  text-align: center;
+
+}
+
+ div.user-flows {
+  float: left;
+  margin: 0 20px;
+  padding: 0 15px;
+  text-align: center;
+}
+
+div.user-flows img {
+width: 500px;
+text-align: center;
+}
+
 div#work div.work-section {
   background-color: rgb(66, 66, 66);
   height: 250px;
@@ -73,6 +107,150 @@ div#work div.work-section img {
   width: 300px;
 }
 
+div#.objective picture {
+  float: right;
+  margin: 0 20px;
+  padding: 20px;
+  padding-right: 30px;
+}
+
+div.objective img {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+
+
+ div.competitive-analysis  {
+  text-align: center;
+  margin: 0 20px;
+  padding-top: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+div.competitive-analysis img {
+  text-align: center;
+  width: 1000px;
+  padding: 20px;
+}
+
+div.interviews  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.interviews img {
+ text-align: center;
+ width: 1000px;
+ padding: 20px;
+}
+
+div.site-map  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 100px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.site-map img {
+ text-align: center;
+ width: 800px;
+ padding: 20px;
+}
+
+div.card-sorting  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.card-sorting img {
+ text-align: center;
+ width: 800px;
+ padding: 20px;
+}
+
+div.wireframes  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.wireframes img {
+ text-align: center;
+ width: 800px;
+ padding: 20px;
+}
+
+div.usability-testing  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 100px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.usability-testing img {
+ text-align: center;
+ width: 800px;
+ padding: 20px;
+}
+div.feedback {
+  text-align: center;
+  margin: 0 20px;
+  padding: 20px;
+}
+
+div.feedback img {
+  text-align: center;
+  width: 900px;
+  padding: 20px;
+}
+
+div.style-guide  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.style-guide img {
+ text-align: center;
+ width: 900px;
+ padding: 20px;
+}
+
+div.final-mockups  {
+ text-align: center;
+ margin: 0 20px;
+ padding-top: 20px;
+ padding-left: 20px;
+ padding-right: 20px;
+ padding-bottom: 20px;
+}
+
+div.final-mockups img {
+ text-align: center;
+ width: 1000px;
+ padding: 20px;
+}
 nav>ul>li>a:visited {
   color: #F5F5F5;
 }
@@ -129,9 +307,8 @@ p {
   color: #F5F5F5
 }
 
-/* img {
-  width: 100%;
-} */
+
+
 
 .logo {
   max-width: 250px;
@@ -179,7 +356,7 @@ a:active {
 .button {
   display: inline-block;
   background-color: #FACBCD;
-  color: #1E1E1E;
+  color: #161515;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
