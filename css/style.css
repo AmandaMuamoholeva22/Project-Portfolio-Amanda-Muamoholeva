@@ -67,7 +67,7 @@ nav>ul>li> {
   width: 100%
 }
 div.user-personas img {
-  width: 20px
+  width: 15SSpx
   text-align: center;
 
 }
@@ -111,7 +111,7 @@ div#.objective picture {
   float: right;
   margin: 0 20px;
   padding: 20px;
-  padding-right: 30px;
+  padding-right: 50px;
 }
 
 div.objective img {
@@ -374,4 +374,11 @@ a:active {
 .button.contact:hover {
   background-color: #FACBCD;
   color: #ffffff;
+}
+
+@media only screen and (min-width: 640px) {
+}
+@media only screen and (min-width: 1024px) {
+}
+@media only screen and (min-width: 1440px) {
 }
