@@ -13,7 +13,7 @@ Text color (white): #F5F5F5;
 body {
   background-color: #161515;
   font-family: 'Comfortaa', cursive;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
   color: #FACBCD;
@@ -45,6 +45,7 @@ div.content {
 
 div nav>ul>li {
   display: inline-block;
+  text-align: right;
 }
 
 nav>ul>li>a {
@@ -55,6 +56,9 @@ nav>ul>li>a {
   color: #4a4a4a;
   display: inline-block;
   width: 100%
+  font-size: 18px;
+  text-align: right;
+
 }
 
 nav>ul>li> {
@@ -64,8 +68,22 @@ nav>ul>li> {
   font-weight: 700;
   color: #4a4a4a;
   display: inline-block;
-  width: 100%
+  width: 100
+  font-size: 18px;
+  text-align: right;
 }
+
+ul.navigation {
+  padding: 20px 20px;
+  text-align: center;
+  display: flex;
+}
+
+div.welcome {
+  text-align: center;
+}
+
+
 div.user-personas img {
   width: 15SSpx
   text-align: center;
@@ -106,12 +124,28 @@ div#work div.work-section picture {
 div#work div.work-section img {
   width: 300px;
 }
+div#hero img {
+  width: 200px
+}
+
+div#other div.work-section picture {
+  width: 100;
+  max-width: 100%;
+  height: auto;
+}
+
+div#other div.work-section img {
+  width: 100;
+  max-width: 100%;
+  height: auto;
+}
 
 div#.objective picture {
   float: right;
   margin: 0 20px;
   padding: 20px;
   padding-right: 50px;
+  padding-left: 50px;
 }
 
 div.objective img {
@@ -268,6 +302,11 @@ nav>ul>li>a:active {
 #hero h1 {
   text-align: center;
 }
+#hero span {
+  display: block;
+}
+
+
 
 selector {
   margin: 0 auto;
@@ -307,8 +346,33 @@ p {
   color: #F5F5F5
 }
 
+@keyframes color-change {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
 
+}
 
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px, 50px);}
+}
+
+.cloud-font {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from { transform: translate(446px, 48px);}
+  to { transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
 
 .logo {
   max-width: 250px;
@@ -358,10 +422,14 @@ a:active {
   background-color: #FACBCD;
   color: #161515;
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #1E1E1E;
   transition: 0.2s opacity;
+}
+.button: hover {
+  opacity: 0.8%;
 }
 
 .button.contact:hoover {
@@ -377,6 +445,37 @@ a:active {
 }
 
 @media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px o 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  .col-md-6 {
+  float: left;
+      width: 50%;
+      padding: right 10%
+    }
+
+[class*="col-"] {
+  float: left;
+}
+
+.row::after {
+  content: :"";
+  display: table;
+  clear: both;
+}
+.container {
+  max-width: 122px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 @media only screen and (min-width: 1024px) {
 }
