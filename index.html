@@ -5,40 +5,43 @@
   <link rel="stylesheet" type="Comfortaa-Bold.ttf/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
+
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta charset="utf-8">
   <title>Amanda Mu'amoholeva</title>
+
+
+
 </head>
+
+
 
 <body>
 <header id="quicknav">
     <div class="container">
-
       <div class="navtoggle" id="myNavToggle">
-
-          <source srcset="img/profile/logo-1.jpg" media="(max-width:767px)"/>
-                <img src="img/profile/logo-2.jpg" alt="Your Name">
-
-                <nav>
-                  <ul class="navigation">x
+<!--<img src="img/profile/logo-1.jpg" width="33" height="30" alt="logo">-->
+        <nav>
+          <ul class="navigation">
                     <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="files/myresume.pdf" target="_blank">Resume</a></li>
-                    <li><a href="contact">Contact</a></li>
-                  </ul>
-                </nav>
+              <li><a href="about.html">About</a></li>
+              <li><a href="files/myresume.pdf" target="_blank">Resume</a></li>
+              <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
 
-          </div>
-      </div>
-  </header>
+</header>
+<main>
 
+<!--begin hero section-->
+  <div id="hero" class="center">
 
-  <div class="content">
-    <div class="welcome">
-      <h1>Welcome! I'm Amanda Mu'amoholeva!</h1>
+  <h1>Welcome! I'm Amanda Mu'amoholeva!</h1>
       <h2>I am a Healthcare Professional turned Ux Designer Based in Utah.</h2>
       <p>I am motivated by my passion in understaning others. Driven by my love of design and Desire to always leave
         things
@@ -49,36 +52,53 @@
         <img src="img/profile/photov_1.jpg" alt="">
       </picture>
 
-    </div>
 
+      <!--begin work and projects section-->
+      <!--please let this work-->
 
-    <div id="work">
+    <div id="work" class="container">
 
       <h2>My Work</h2>
 
-      <div id="olive-section" class="work-section">
+      <div id="row" class="p1">
 
+        <div class="col-md-6 col-lg-7 col-xl-7">
         <picture>
           <source srcset="img/profile/olive_v1.jpg" media="(max-width:767px)">
           <img src="img/profile/olive_v1.jpg" alt="">
         </picture>
 
+          </div>
+
+          <div class="col-md-6 col-lg-5 col-xl-5">
         <h3>Olive</h3>
 
         <p>olive allows parents and young adults gain confidence back by logging into a responsive health and wellness
           portal
           to track their wellbeing.</p>
         <a class="button" href="olive.html">Read More</a>
-
       </div>
 
-      <div id="choice-of-words-section" class="work-section">
 
+
+      </div>
+      <!--end row-->
+
+
+
+      <div id="project2">
+        <!--container for image and description of project 2-->
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-7 col-xl-7">
         <picture>
           <source srcset="img/profile/choice_of_words_v1.jpg"media=" (max-width:767px)">
           <img src="img/profile/choice_of_words_v2.png" alt="">
         </picture>
+      </div>
 
+      <div class="col-md-6 col-lg-5 col-xl-5">
         <h3>Choice of Words</h3>
 
         <p>Choice of Words is a mobile language study application for those trying to tackle any language they are
@@ -87,8 +107,14 @@
           learn</p>
       </div>
 
+    </div>
+    <!--end of row-->
+    </div>
+
         <div id="project3">
-          <div class=row">
+
+          <div class="row">
+
             <div class="col-md-6 col-lg-7 col-xl-7">
               <svg id="about-picture" xmlns="http://www.w3.org/2000/svg" class="berlin-illustration" height="" viewBox="0 0 700 505" xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
@@ -687,6 +713,7 @@
                   <path fill="#1A232C" d="M6.576,15.756 L7.542,16.016 C8.569,12.212 11.952,9.381 16.033,9.186 C16.373,9.169 16.682,8.98 16.852,8.685 C19.048,4.86 23.156,2.282 27.877,2.282 C31.391,2.283 34.563,3.704 36.867,6.006 C39.169,8.309 40.589,11.481 40.59,14.995 C40.59,15.343 40.567,15.698 40.535,16.066 C40.505,16.412 40.659,16.753 40.939,16.959 C41.219,17.164 41.59,17.21 41.912,17.078 C42.562,16.81 43.268,16.662 44.013,16.661 C45.541,16.662 46.916,17.278 47.918,18.279 C48.919,19.282 49.536,20.656 49.536,22.185 C49.536,23.713 48.919,25.088 47.918,26.09 C46.916,27.091 45.541,27.707 44.013,27.708 L8.321,27.708 L8.321,28.708 L9.321,28.708 L9.321,28.672 C9.321,28.39 9.201,28.119 8.991,27.93 C8.782,27.741 8.5,27.649 8.219,27.677 C8.027,27.697 7.834,27.708 7.641,27.708 C6.113,27.707 4.738,27.091 3.735,26.09 C2.734,25.088 2.118,23.713 2.117,22.185 C2.115,19.444 4.12,17.174 6.739,16.742 C7.126,16.679 7.439,16.395 7.542,16.016 L6.576,15.756 L6.414,14.769 C2.843,15.357 0.119,18.447 0.117,22.185 C0.118,26.34 3.486,29.707 7.641,29.708 C7.908,29.708 8.169,29.693 8.423,29.667 L8.321,28.672 L7.321,28.672 L7.321,28.708 C7.321,28.971 7.428,29.229 7.614,29.415 C7.8,29.601 8.058,29.708 8.321,29.708 L44.013,29.708 C48.168,29.707 51.535,26.34 51.536,22.185 C51.535,18.029 48.168,14.662 44.013,14.662 C43,14.661 42.032,14.865 41.151,15.228 L41.531,16.153 L42.528,16.239 C42.562,15.843 42.59,15.429 42.59,14.995 C42.589,6.869 36.004,0.283 27.877,0.282 C22.414,0.282 17.651,3.27 15.117,7.689 L15.984,8.187 L15.936,7.188 C10.972,7.429 6.861,10.865 5.611,15.495 L6.576,15.756 L6.414,14.769 L6.576,15.756"></path>
               </g>
               <path fill="#1A232C" d="M55.253 470.489L55.253 410.403C55.253 409.85 54.805 409.403 54.253 409.403 53.701 409.403 53.253 409.85 53.253 410.403L53.253 470.489C53.253 471.041 53.701 471.489 54.253 471.489 54.805 471.489 55.253 471.041 55.253 470.489M50.889 340.95L65.312 340.95C65.865 340.95 66.312 340.502 66.312 339.95 66.312 339.397 65.865 338.95 65.312 338.95L50.889 338.95C50.336 338.95 49.889 339.397 49.889 339.95 49.889 340.502 50.336 340.95 50.889 340.95"></path>
+            </div>
 
               <div clss="col-md-6 col-lg-5 col-xl-5"
   <h3>CSS Animation</h3>
@@ -698,35 +725,40 @@
     </div>
   </div>
 
-
+</div>
+<!--end of work-->
+</div>
+<!--end of hero-->
 
   <footer>
 <footer id="contact"
   <div class="fade center">
     <div>
     <h2>Get in Touch!</h2>
+      <p>Do you like my work and want to discuss opportunities? please get in touch, sending an email?</p>
   </div>
 
   <div>
-
-    <p>Do you like my work and want to discuss opportunities? please get in touch, sending an email?</p>
-    <div class="">
-
+      <p>Interested in working together? I'd love to!<br><br>
       <a class="button" href="amanda8muamoholeva@gmail.com">Send me an email</a>
 
       <a class="button" href="Contact">Contact</a>
+      </div>
+
+    <div class="row container">
+
 
 
 </div>
 
-    </div>
-
-    <div class="">
-
+    <div>
       <p>Copyright <span>&copy;</span> Amanda Mu'amoholeva 2022</p>
     </div>
 
+  </div>
+
   </footer>
+</main>
 
 </body>
 

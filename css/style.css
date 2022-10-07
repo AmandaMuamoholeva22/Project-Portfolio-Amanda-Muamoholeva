@@ -9,6 +9,9 @@ Tertiary color (light blue): #4BFDF2;
 Text color (light pink): #FACBCD;
 Text color (white): #F5F5F5;
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: #161515;
@@ -19,12 +22,258 @@ body {
   color: #FACBCD;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #ff7f50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a:visited {
+  color: #ff7f50;
+}
+
+a:hover,
+a:focus {
+  color: #35796b;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #1F6C74;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button {
+  display: inline-block;
+  background-color: #FACBCD;
+  color: #161515;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #1E1E1E;
+  transition: 0.2s opacity;
+}
+
+.button.contact:hoover {
+  background-color: transparent;
+  color: #FACBCD;
+  text-transform: uppercase;
+  border: 2px solid #FACBCD;
+}
+
+.button.contact:hover {
+  background-color: #FACBCD;
+  color: #ffffff;
+}
 header {
+
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
   background-color: #FACBCD;
   text-align: center;
-  padding: 10px 0;
-  position: relative;
+  padding: 10px 0 24px;
+  margin: 0;
+}
+/* text-align: center; removed to make sure logo shows up to the left */
+
+ /* padding: auto; */
+
+.position: fixed; {
+ width: 100%;
+}
+
+/* Layout Styling */
+.container {
+ padding: 0 15px;
+
+ /* left and right padding */
+}
+
+.center {
+ text-align: center;
+}
+
+.left {
+ text-align: left;
+}
+
+.row {
+ margin: 25px 0;
+
+ /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {
+  padding-bottom: 25px;
+}
+
+#story .row {
+  padding-bottom: 25px;
+}
+
+#tools .row {
+  padding-bottom: 25px;
+}
+
+#hero .row {
+  padding-bottom: 25px;
+}
+
+#skills .row {
+  padding-bottom: 25px;
+}
+
+#about .row {
+  padding-bottom: 25px;
+}
+
+#skills-and-tools .row {
+  padding-bottom: 25px;
+}
+
+#title .row {
+  padding-bottom: 25px;
+}
+
+#hero h1 {
+  text-align: center;
+}
+
+/* makes just the h1 in hero sections center */
+
+/* alternatively, can create a rule set with a selector for center and add the center class to any HTML elements you want centered */
+#hero {
+  padding: 20px 0;
+
+  /* add space to top and bottom of hero section to give its content some space */
+  display: inline-block;
+  width: 100%;
+
+  /* recommended method that ensures margins of every element in hero will not affect elements outside of it - always add width of 100% */
+  text-align: center;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 48px;
+  width: auto;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* only selects unordered lists within the nav element to remove the bullets */
+nav > ul > li > a {
+  padding: 0 15px;
+
+  /* left and right padding */
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #FEFCF8;
+
+  /* font-family: 'Handlee', cursive; */
+
+  /* choosing not to set a color here because I want nav links to inherit from a */
+}
+
+nav > ul > li > a:visited {
+  color: #F5F5F5;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+  color: #cc6540;
+  text-transform: underline;
+  opacity: 0.8;
+}
+
+nav > ul > li > a:active {
+  color: #ffffff;
+}
+
+/* delete this to remove blank space under the logo and menu */
+
+/* nav {
+  display: inline-block;
+  width: 100%;
+} */
+
+main {
+  padding-top: 56px;
+}
+
+#about {
+  text-align: center;
+}
+
+#skills .row {
+  text-align: center;
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+#contact .row {
+  border-bottom: unset;
+}
+
+#picrow .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+.col-33 {
+  width: 33%;
+  float: left;
+}
+
+#container .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #header h1 {
@@ -39,39 +288,18 @@ header {
   width: 100%;
 }
 
+#tools > ul > li {
+  list-style-type: none;
+}
+
+#tools ul {
+  padding-left: 0;
+}
+
 div.content {
   padding: 50px;
 }
 
-div nav>ul>li {
-  display: inline-block;
-  text-align: right;
-}
-
-nav>ul>li>a {
-  list-style-type: none;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-  display: inline-block;
-  width: 100%
-  font-size: 18px;
-  text-align: right;
-
-}
-
-nav>ul>li> {
-  list-style-type: none;
-  padding: 0 15px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #4a4a4a;
-  display: inline-block;
-  width: 100
-  font-size: 18px;
-  text-align: right;
-}
 
 ul.navigation {
   padding: 20px 20px;
@@ -285,58 +513,54 @@ div.final-mockups img {
  width: 1000px;
  padding: 20px;
 }
-nav>ul>li>a:visited {
-  color: #F5F5F5;
+
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
 }
 
-nav>ul>li>a:hover,
-focus {
-  color: #cc6540;
-  text-decoration: underline;
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-right: 0;
 }
 
-nav>ul>li>a:active {
-  color: #ffffff;
-}
-
-#hero h1 {
-  text-align: center;
-}
-#hero span {
+/* this will override the previous code and show the complete menu */
+.navtoggle.responsive li {
   display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+a.icon {
+  padding: 0;
+}
+
+.logo,
+#menuIcon {
+  vertical-align: middle;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.col-xs-1 {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+}
+
+.fadeIn {
+  opacity: 0;
+}
 
 
 selector {
   margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  line-height: 1.4;
-}
-
-h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.25;
-  font-weight: 700;
-}
-
-h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-}
-
-h4 {
-  font-size: 1.35em;
-  font-weight: 400;
 }
 
 p {
@@ -374,74 +598,10 @@ p {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-.logo {
-  max-width: 250px;
-  text-align: center;
-}
-
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0;
-
-}
 
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #4a4a4a;
-}
-
-a {
-  color: #ff7f50;
-  text-decoration: none;
-}
-
-a:visited {
-  color: #ff7f50;
-}
-
-a:hover,
-focus {
-  color: #cc6540;
-  text-decoration: underline;
-}
-
-a:active {
-  color: #ffffff;
-}
-
-.button:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
-.button {
-  display: inline-block;
-  background-color: #FACBCD;
-  color: #161515;
-  font-weight: 400;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #1E1E1E;
-  transition: 0.2s opacity;
-}
-.button: hover {
-  opacity: 0.8%;
-}
-
-.button.contact:hoover {
-  background-color: transparent;
-  color: #FACBCD;
-  text-transform: uppercase;
-  border: 2px solid #FACBCD;
-}
-
-.button.contact:hover {
-  background-color: #FACBCD;
-  color: #ffffff;
 }
 
 @media only screen and (min-width: 640px) {
@@ -455,29 +615,337 @@ a:active {
     float: right;
     margin-top: 4px;
   }
+  body {
+    font-size: 16px; /* the font size for headers will update automatically bc of em values */
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  #story .row {
+    border-bottom: unset;
+    padding: 0;
+  }
 
   .col-md-6 {
-  float: left;
-      width: 50%;
-      padding: right 10%
-    }
+    width: 50%;
+  }
 
-[class*="col-"] {
-  float: left;
-}
+  .logo {
+    max-width: 250px;
+    max-height: 64px;
+    width: auto;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  /* this makes the list items show up next to each other; we moved it here because we don't want small screens to have these show up side by side */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    list-style-type: none;
+
+    /* padding: 0; */
+    margin: 1em 0;
+
+    /* still want margins */
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #story,
+  p {
+    margin-top: 0;
+  }
+
+  .container-pic {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #profile-pic {
+    max-width: 600px;
+    height: auto;
+  }
+
+  #userstory {
+    font-weight: 700;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
 
 .row::after {
   content: :"";
   display: table;
   clear: both;
 }
+
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
+
+  .col-lg-1 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+    float: left;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+    float: left;
+  }
+
+  .col-lg-7 {
+    width: 60%;
+    float: left;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+    float: left;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .container-pic {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #contact .container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #story .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  #skills .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  #tools .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    max-width: 250px;
+    max-height: 64px;
+    width: auto;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  /* this makes the list items show up next to each other */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav > ul {
+    list-style-type: none;
+
+    /* padding: 0; */
+    margin: 1em 0;
+  }
+
+  main {
+    padding-top: 120px;
+  }
+
+  #story {
+    margin: auto;
+  }
+
+  #picrow {
+    display: flex;
+    align-items: center;
+  }
+
+  #userstory {
+    font-weight: 700;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+@media only screen and (min-width: 1440px) {
+}
+header {
+  text-align: unset;
+  padding: 20px 0 13px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}
+
+.col-xl-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-xl-9 {
+  width: 75%;
+  float: left;
+}
+
+.col-xl-7 {
+  width: 60%;
+  float: left;
+}
+
+.col-xl-5 {
+  width: 40%;
+  float: left;
+}
+
+.col-xl-6 {
+  width: 50%;
+  float: left;
+}
+
 .container {
-  max-width: 122px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
 }
+
+.container-pic {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media only screen and (min-width: 1024px) {
+
+#contact .container {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
-@media only screen and (min-width: 1440px) {
+
+#style .container,
+#iterate .container,
+#design .container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+#story .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+#skills .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+#tools .row {
+  border-bottom: unset;
+  padding-bottom: 0;
+}
+
+body {
+  font-size: 18px;
+}
+
+.row {
+  margin-bottom: 0;
+}
+
+.logo {
+  max-width: 250px;
+  max-height: 64px;
+  width: auto;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+/* this makes the list items show up next to each other */
+.navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
+
+nav > ul {
+  list-style-type: none;
+
+  /* padding: 0; */
+  margin: 1em 0;
+}
+
+main {
+  padding-top: 120px;
+}
+
+#userstory {
+  font-weight: 700;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+}
+
+[class*="col-"] {
+float: left;
+padding-left: 10px;
+padding-right: 10px;
 }
