@@ -311,9 +311,12 @@ div.welcome {
   text-align: center;
 }
 
+div#skills.row {
+  text-align: center;
+}
 
 div.user-personas img {
-  width: 15SSpx
+  width: 15px
   text-align: center;
 
 }
