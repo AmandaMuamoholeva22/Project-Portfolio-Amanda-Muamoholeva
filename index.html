@@ -5,6 +5,7 @@
   <link rel="stylesheet" type="Comfortaa-Bold.ttf/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
+<script src="https://kit.fontawesome.com/b8c6b3462b.js" crossorigin="anonymous"></script>
 
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -20,26 +21,30 @@
 
 
 <body>
-<header id="quicknav">
-    <div class="container">
-      <div class="navtoggle" id="myNavToggle">
-<!--<img src="img/profile/logo-1.jpg" width="33" height="30" alt="logo">-->
-        <nav>
-          <ul class="navigation">
-                    <li><a href="index.html">Work</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="files/myresume.pdf" target="_blank">Resume</a></li>
-              <li><a href="contact">Contact</a></li>
-        </ul>
-      </nav>
+  <header id="quicknav">
+      <div class="container">
+        <div class="navtoggle" id="myNavToggle">
+  <!--<img src="img/profile/logo-1.jpg" width="33" height="30" alt="logo">-->
+          <nav>
+            <ul class="navigation.responsive">
+               <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="files/myresume.pdf" target="_blank">Resume</a></li>
+                <li><a href="contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+              <img src="img/Icon_Menu.svg" alt="menu" id="menuIcon">
+                </a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-  </div>
+  </header>
 
-</header>
+
 <main>
 
 <!--begin hero section-->
-  <div id="hero" class="center">
+  <div class="hero" class="center">
 
   <h1>Welcome! I'm Amanda Mu'amoholeva!</h1>
       <h2>I am a Healthcare Professional turned Ux Designer Based in Utah.</h2>
@@ -759,6 +764,7 @@
 <script>
   alert("Hi! Welcome to My Portfolio Site!");
 </script>
+<script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 

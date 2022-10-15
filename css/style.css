@@ -9,6 +9,7 @@ Tertiary color (light blue): #4BFDF2;
 Text color (light pink): #FACBCD;
 Text color (white): #F5F5F5;
 */
+
 * {
   box-sizing: border-box;
 }
@@ -20,6 +21,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #FACBCD;
+
 }
 
 h1,
@@ -49,8 +51,6 @@ h4 {
   font-weight: 400;
 }
 
-
-
 img {
   width: 100%;
 }
@@ -75,13 +75,8 @@ a:active {
   color: #1F6C74;
 }
 
-.button:hover {
-  opacity: 0.8;
-  text-decoration: none;
-}
-
 .button {
-  display: inline-block;
+display: inline-block;
   background-color: #FACBCD;
   color: #161515;
   font-weight: 400;
@@ -89,103 +84,155 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #1E1E1E;
   transition: 0.2s opacity;
+
 }
 
-.button.contact:hoover {
-  background-color: transparent;
-  color: #FACBCD;
+.button:visited {
+  color: #385B60;
+  border-style: solid;
+  border-color: #385B60;
+}
+
+.button:hover,
+.button:focus {
+  color: #35796b;
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.button:active {
+  color: #1F6C74;
+}
+
+.button2 {
+  background-color: #77553e;
+  font-weight: 600;
+  color: #FEFCF8;
   text-transform: uppercase;
-  border: 2px solid #FACBCD;
+  border: 2px solid #77553E;
+  transition: 0.2s opacity;
+  padding: 8px;
 }
 
-.button.contact:hover {
-  background-color: #FACBCD;
-  color: #ffffff;
+.button2:visited {
+  color: #FEFCF8;
+  background-color: #385B60;
+  border-style: solid;
+  border-color: #385B60;
 }
+
+.button2:hover,
+.button2:focus {
+  background-color: #35796b;
+  color: #FEFCF8;
+  border-style: solid;
+  border-color: #35796b;
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.button2:active {
+  background-color: #1F6C74;
+  color: #FEFCF8;
+  border-style: solid;
+  border-color: #1F6C74;
+}
+
 header {
+  background-color: #FACBCD;
+  padding: 10px 0 24px;
+    margin: 0;
+
+  /* text-align: center; removed to make sure logo shows up to the left */
+
+  /* padding: auto; */
 
   box-shadow: 2px 2px 1px rgba(50, 50, 50, 0.75);
-  background-color: #FACBCD;
-  text-align: center;
-  padding: 10px 0 24px;
-  margin: 0;
-}
-/* text-align: center; removed to make sure logo shows up to the left */
-
- /* padding: auto; */
-
-.position: fixed; {
- width: 100%;
+    position: fixed;
+  width: 100%;
 }
 
 /* Layout Styling */
 .container {
- padding: 0 15px;
+  padding: 0 15px;
 
- /* left and right padding */
+  /* left and right padding */
 }
 
 .center {
- text-align: center;
+  text-align: center;
 }
 
 .left {
- text-align: left;
+  text-align: left;
 }
 
 .row {
- margin: 25px 0;
+  margin: 25px 0;
 
- /* 25px top and bottom, 0 left and right */
+  /* 25px top and bottom, 0 left and right */
 }
 
 #work .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #story .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #tools .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #hero .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
+
+div.hero img {
+  width: 200px;
+}
+
+div#welcome img {
+  width: 200px;
+}
+
 
 #skills .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #about .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #skills-and-tools .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
 #title .row {
   padding-bottom: 25px;
+  border-bottom: 1px solid #000;
 }
 
-#hero h1 {
-  text-align: center;
-}
+
+
+
 
 /* makes just the h1 in hero sections center */
 
 /* alternatively, can create a rule set with a selector for center and add the center class to any HTML elements you want centered */
-#hero {
+.hero {
   padding: 20px 0;
-
-  /* add space to top and bottom of hero section to give its content some space */
   display: inline-block;
   width: 100%;
-
-  /* recommended method that ensures margins of every element in hero will not affect elements outside of it - always add width of 100% */
   text-align: center;
 }
 
@@ -208,7 +255,7 @@ nav > ul > li > a {
   /* left and right padding */
   text-transform: uppercase;
   font-weight: 600;
-  color: #FEFCF8;
+  color: #161515;
 
   /* font-family: 'Handlee', cursive; */
 
@@ -216,18 +263,18 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
-  color: #F5F5F5;
+  color: #161515;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-  color: #cc6540;
+  color: #161515;
   text-transform: underline;
   opacity: 0.8;
 }
 
 nav > ul > li > a:active {
-  color: #ffffff;
+  color: #161515;
 }
 
 /* delete this to remove blank space under the logo and menu */
@@ -241,7 +288,13 @@ main {
   padding-top: 56px;
 }
 
-#about {
+div.welcome img {
+  width: 200px;
+}
+
+
+
+.about {
   text-align: center;
 }
 
@@ -249,6 +302,34 @@ main {
   text-align: center;
   border-bottom: unset;
   padding-bottom: 0;
+}
+
+#uiux > ul > li {
+  list-style-type: none;
+}
+
+#uiux > ul {
+  padding-left: 0;
+}
+
+#tools > ul > li {
+  list-style-type: none;
+}
+
+#tools ul {
+  padding-left: 0;
+}
+
+#userstory {
+  font-weight: 700;
+}
+
+#linkedin,
+#instagram,
+#behance {
+  width: 50px;
+  max-width: 100%;
+  height: auto;
 }
 
 #contact .row {
@@ -276,247 +357,22 @@ main {
   clear: both;
 }
 
-#header h1 {
-  margin: 0;
-  padding: 0.67em 0;
-}
-
-#header {
-  background-color: #FACBCD;
-  padding: 20px 0;
-  display: inline-block;
+.cat {
   width: 100%;
-}
-
-#tools > ul > li {
-  list-style-type: none;
-}
-
-#tools ul {
-  padding-left: 0;
-}
-
-div.content {
-  padding: 50px;
-}
-
-
-ul.navigation {
-  padding: 20px 20px;
-  text-align: center;
-  display: flex;
-}
-
-div.welcome {
-  text-align: center;
-}
-
-div#skills.row {
-  text-align: center;
-}
-
-div.user-personas img {
-  width: 15px
-  text-align: center;
-
-}
-
-div.user-personas {
-  text-align: center;
-  margin: 10px;
-  text-align: center;
-
-}
-
- div.user-flows {
-  float: left;
-  margin: 0 20px;
-  padding: 0 15px;
-  text-align: center;
-}
-
-div.user-flows img {
-width: 500px;
-text-align: center;
-}
-
-div#work div.work-section {
-  background-color: rgb(66, 66, 66);
-  height: 250px;
-  margin: 30px;
-  padding: 30px;
-}
-
-div#work div.work-section picture {
-  float: left;
-  margin: 0 20px;
-}
-
-div#work div.work-section img {
-  width: 300px;
-}
-div#hero img {
-  width: 200px
-}
-
-div#other div.work-section picture {
-  width: 100;
   max-width: 100%;
   height: auto;
 }
 
-div#other div.work-section img {
-  width: 100;
-  max-width: 100%;
-  height: auto;
+/* display all elements except the last one */
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-div#.objective picture {
-  float: right;
-  margin: 0 20px;
-  padding: 20px;
-  padding-right: 50px;
-  padding-left: 50px;
+.navtoggle li:last-child {
+  padding: 0 0 10px;
 }
 
-div.objective img {
-  width: 300px;
-  float: right;
-  padding: 20px;
-}
-
-
- div.competitive-analysis  {
-  text-align: center;
-  margin: 0 20px;
-  padding-top: 100px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-}
-
-div.competitive-analysis img {
-  text-align: center;
-  width: 1000px;
-  padding: 20px;
-}
-
-div.interviews  {
- text-align: center;
- margin: 0 20px;
- padding-top: 20px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.interviews img {
- text-align: center;
- width: 1000px;
- padding: 20px;
-}
-
-div.site-map  {
- text-align: center;
- margin: 0 20px;
- padding-top: 100px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.site-map img {
- text-align: center;
- width: 800px;
- padding: 20px;
-}
-
-div.card-sorting  {
- text-align: center;
- margin: 0 20px;
- padding-top: 20px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.card-sorting img {
- text-align: center;
- width: 800px;
- padding: 20px;
-}
-
-div.wireframes  {
- text-align: center;
- margin: 0 20px;
- padding-top: 20px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.wireframes img {
- text-align: center;
- width: 800px;
- padding: 20px;
-}
-
-div.usability-testing  {
- text-align: center;
- margin: 0 20px;
- padding-top: 100px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.usability-testing img {
- text-align: center;
- width: 800px;
- padding: 20px;
-}
-div.feedback {
-  text-align: center;
-  margin: 0 20px;
-  padding: 20px;
-}
-
-div.feedback img {
-  text-align: center;
-  width: 900px;
-  padding: 20px;
-}
-
-div.style-guide  {
- text-align: center;
- margin: 0 20px;
- padding-top: 20px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.style-guide img {
- text-align: center;
- width: 900px;
- padding: 20px;
-}
-
-div.final-mockups  {
- text-align: center;
- margin: 0 20px;
- padding-top: 20px;
- padding-left: 20px;
- padding-right: 20px;
- padding-bottom: 20px;
-}
-
-div.final-mockups img {
- text-align: center;
- width: 1000px;
- padding: 20px;
-}
-
+/* the .responsive is for javascript later */
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
@@ -533,7 +389,6 @@ div.final-mockups img {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .navtoggle.responsive nav {
@@ -561,63 +416,44 @@ a.icon {
   opacity: 0;
 }
 
-
-selector {
-  margin: 0 auto;
+#wireframes .row {
+  border-bottom: unset;
+  padding: 0;
 }
 
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 300;
-  color: #F5F5F5
+#design .row {
+  border-bottom: unset;
+  padding: 0;
 }
 
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-
+#iterate .row {
+  border-bottom: unset;
+  padding: 0;
 }
 
-.sun {
-  animation: 4s color-change infinite alternate linear;
+#pref .row {
+  border-bottom: unset;
+  padding: 0;
 }
 
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px, 50px);}
+#conclusion .row {
+  border-bottom: unset;
+  padding: 0;
 }
 
-.cloud-font {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from { transform: translate(446px, 48px);}
-  to { transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
-
-#work .row {
-  padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
-}
-
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 771px) {
+  /* tells browser that when screen is 771px and above it needs to use this styling */
   header {
     text-align: unset;
-    padding: 20px o 13px;
+    padding: 20px 0 13px;
   }
 
   nav {
-    width: auto;
-    float: right;
+    width: auto; /* won't take up full screen, only as wide as its content */
+    float: right; /* this ensures that nav floats to the right of the logo */
     margin-top: 4px;
   }
+
   body {
     font-size: 16px; /* the font size for headers will update automatically bc of em values */
   }
@@ -690,12 +526,6 @@ p {
     height: auto;
     margin: auto;
   }
-
-
-.row::after {
-  content: :"";
-  display: table;
-  clear: both;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -765,7 +595,27 @@ p {
     padding-bottom: 0;
   }
 
-  #tools .row {
+  div.welcome {
+  text-align: center;
+}
+
+div#skills.row {
+  text-align: center;
+}
+
+
+
+
+.tools > li {
+  list-style-type: none;
+}
+
+.tools ul {
+  padding-left: 0;
+}
+
+
+  .tools .row {
     border-bottom: unset;
     padding-bottom: 0;
   }
@@ -824,131 +674,131 @@ p {
     height: auto;
     margin: auto;
   }
-
-@media only screen and (min-width: 1440px) {
-}
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
 }
 
-.col-xl-3 {
-  width: 25%;
-  float: left;
-}
+@media only screen and (min-width: 1441px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+  }
 
-.col-xl-9 {
-  width: 75%;
-  float: left;
-}
+  .col-xl-3 {
+    width: 25%;
+    float: left;
+  }
 
-.col-xl-7 {
-  width: 60%;
-  float: left;
-}
+  .col-xl-9 {
+    width: 75%;
+    float: left;
+  }
 
-.col-xl-5 {
-  width: 40%;
-  float: left;
-}
+  .col-xl-7 {
+    width: 60%;
+    float: left;
+  }
 
-.col-xl-6 {
-  width: 50%;
-  float: left;
-}
+  .col-xl-5 {
+    width: 40%;
+    float: left;
+  }
 
-.container {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .col-xl-6 {
+    width: 50%;
+    float: left;
+  }
 
-.container-pic {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .ƒ {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#contact .container {
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .container-pic {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#style .container,
-#iterate .container,
-#design .container {
-  max-width: 1000px;
-  margin: auto;
-}
+  #contact .container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#story .row {
-  border-bottom: unset;
-  padding-bottom: 0;
-}
+  #style .container,
+  #iterate .container,
+  #design .container {
+    max-width: 1000px;
+    margin: auto;
+  }
 
-#skills .row {
-  border-bottom: unset;
-  padding-bottom: 0;
-}
+  #story .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
 
-#tools .row {
-  border-bottom: unset;
-  padding-bottom: 0;
-}
+  #skills .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
 
-body {
-  font-size: 18px;
-}
+  #tools .row {
+    border-bottom: unset;
+    padding-bottom: 0;
+  }
 
-.row {
-  margin-bottom: 0;
-}
+  body {
+    font-size: 18px;
+  }
 
-.logo {
-  max-width: 250px;
-  max-height: 64px;
-  width: auto;
-}
+  .row {
+    margin-bottom: 0;
+  }
 
-nav > ul > li {
-  display: inline-block;
-}
+  .logo {
+    max-width: 250px;
+    max-height: 64px;
+    width: auto;
+  }
 
-/* this makes the list items show up next to each other */
-.navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  nav > ul > li {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  /* this makes the list items show up next to each other */
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-nav > ul {
-  list-style-type: none;
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-  /* padding: 0; */
-  margin: 1em 0;
-}
+  nav > ul {
+    list-style-type: none;
 
-main {
-  padding-top: 120px;
-}
+    /* padding: 0; */
+    margin: 1em 0;
+  }
 
-#userstory {
-  font-weight: 700;
-  width: 600px;
-  max-width: 100%;
-  height: auto;
-  margin: auto;
-}
+  main {
+    padding-top: 120px;
+  }
+
+  #userstory {
+    font-weight: 700;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+  }
 }
 
 [class*="col-"] {
-float: left;
-padding-left: 10px;
-padding-right: 10px;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
 }

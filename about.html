@@ -30,12 +30,17 @@
               <li><a href="about.html">About</a></li>
               <li><a href="files/myresume.pdf" target="_blank">Resume</a></li>
               <li><a href="contact">Contact</a></li>
+              <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+            <img src="img/Icon_Menu.svg" alt="menu" id="menuIcon">
+              </a></li>
         </ul>
       </nav>
     </div>
   </div>
-
 </header>
+
+
+
 <main>
 
 <div class="content">
@@ -49,7 +54,7 @@
       <source srcset="img/profile/photov_1.jpg" media="(max-width:767px)">
       <img src="img/profile/photov_1.jpg" alt="">
     </picture>
-</div>
+</div><!--end welcome-->
 
 <div class="About">
   <h1>About Me!</h1>
@@ -59,21 +64,18 @@
 <p>When i’m not chasing my dream in UX Design i’m either with my family enjoying being outside having BBQ’s get togethers, or you’ll see me and my husband knees deep in another remodeling project around our home. I enjoy playing any type of game from board games to card games, or you’ll find me in the kitchen trying new recipes. A typical winding down activity that I enjoy would be watching a movie with my husband in the comfort of our home, or just grabbing a book and getting cozy on the couch. </p>
 
   <a class="button" href="files/myresume.pdf">View my Resume</a>
-
-
-</div>
+</div><!--end about-->
 
 <div id="skills-title" div class="skills-tools">
   <div class="col-md-6 col-lg-5 col-xl-5">
-</div>
+</div><!--end skills-->
 
-  <h3>Skills & Tools</h3>
 
   <div id="skills" div class="row">
+    <h3>Skills & Tools</h3>
     <div class="col-md-6 col-lg-5 col-xl-5">
   <h2>Relevant Skills</h2>
-  <nav>
-    <ul>
+    <ul class="tools">
       <li>UX Design,</li>
       <li>UI Design,</li>
       <li>Competitive Anlysis,</li>
@@ -87,16 +89,14 @@
       <li>css,</li>
       <li>javascript,</li>
     </ul>
-  </nav>
-</div>
+</div><!--end col-->
 
-<div id="skills" div class="row">
   <div class="col-md-6 col-lg-5 col-xl-5">
 
   <h2>Tools I use</h2>
 
-  <nav>
-    <ul>
+
+    <ul class="tools">
       <li>Figma,</li>
       <li>Adobe XD,</li>
       <li>Sketch,</li>
@@ -106,19 +106,18 @@
       <li>Atom,</li>
       <li>Sublime</li>
     </ul>
-  </nav>
-
-</div>
+  </div><!--end col-->
+  </div><!--end row-->
+</div><!-- content -->
 
 <footer id="contact"
   <div class="fade center">
-  </div>
-
+    <div>
     <h2>Get in Touch!</h2>
       <p>Do you like my work and want to discuss opportunities? please get in touch, sending an email?</p>
   </div>
-<div class="fade center">
 
+  <div>
       <p>Interested in working together? I'd love to!<br><br>
       <a class="button" href="amanda8muamoholeva@gmail.com">Send me an email</a>
 
@@ -134,12 +133,13 @@
     <div>
       <p>Copyright <span>&copy;</span> Amanda Mu'amoholeva 2022</p>
     </div>
-
+  </main>
 
   </footer>
 <script>
   alert("Hi! Welcome to My Portfolio Site!");
 </script>
+<script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
 
