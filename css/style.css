@@ -22,6 +22,7 @@ body {
   line-height: 1.6;
   color: #FACBCD;
 
+
 }
 
 h1,
@@ -52,7 +53,7 @@ h4 {
 }
 
 img {
-  width: 100%;
+  width: 75%;
 }
 
 a {
@@ -369,7 +370,7 @@ div.welcome img {
 }
 
 .navtoggle li:last-child {
-  padding: 0 0 10px;
+  padding: 10px 0;
 }
 
 /* the .responsive is for javascript later */
@@ -380,8 +381,8 @@ div.welcome img {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
-  top: 2px;
+  left: 0;
+  top: 1px;
   padding-right: 0;
 }
 
@@ -640,7 +641,7 @@ div#skills.row {
 
   /* this makes the list items show up next to each other */
   .navtoggle li:not(:last-child) {
-    display: inline-block;
+    display: Copyright;
   }
 
   .navtoggle li:last-child {
