@@ -225,7 +225,9 @@ div#welcome img {
 
 
 
-
+.info {
+  list-style-type: none;
+}
 
 /* makes just the h1 in hero sections center */
 
@@ -728,6 +730,9 @@ div#skills.row {
     margin-left: auto;
     margin-right: auto;
   }
+  
+  
+  
 
   #style .container,
   #iterate .container,
